@@ -1,0 +1,50 @@
+<div class="pit">
+  <div class="pit-editor-wrap box-shadow">
+    <div class="pit-editor-head modal-header">
+      <h5 class="modal-title">坑位html</h5>
+    </div>
+    <textarea class="pit-editor" id="htmlEditor"/>
+  </div>
+  <div class="pit-editor-wrap box-shadow">
+    <div class="pit-editor-head modal-header">
+      <h5 class="modal-title">坑位less</h5>
+    </div>
+    <textarea class="pit-editor" id="lessEditor" />
+  </div>
+  <div class="pit-editor-wrap  box-shadow">
+    <div class="pit-editor-head modal-header">
+      <h5 class="modal-title">页面配置</h5>
+    </div>
+    <div class="pit-config form-horizontal">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">坑位名称</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputName" placeholder="不能用中文,建议拼音缩写加日期,例如:czh-20170115"/> </div>
+      </div>
+      <div class="pit-img">
+        <input type="file" id="pitImg"/>
+      </div>
+      <div class="pit-img-review" id="pitImgReview"></div>
+    </div>
+  </div>
+  <div class="pit-editor-wrap  box-shadow">
+    <div class="pit-editor-head modal-header">
+      <h5 class="modal-title">保存和预览</h5>
+    </div>
+    <div class="pit-buttons">
+      <a href='javascript:void(0)' class="btn btn-primary" id="save">保存</a>
+      <a href='javascript:void(0)' class="btn btn-success" id="preview">预览</a>
+    </div>
+  </div>
+</div>
+
+<div id="iframeModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">坑位预览</div>
+      <div class="modal-body modal-info">
+        <iframe border="0" class="preview-iframe" id="previewIframe"></iframe>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+{
+  "name":"image",
+  "main":"image.js",
+  "description":"图片"
+}

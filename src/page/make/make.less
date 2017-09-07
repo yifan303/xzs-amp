@@ -1,0 +1,185 @@
+@shadow : 0 0 3px rgba(0,0,0,.3);
+
+::-webkit-scrollbar {width: 3px;height:3px;}
+::-webkit-scrollbar-track-piece{background-color: #eee;margin: -2px;}
+::-webkit-scrollbar-thumb{background: #aaa;min-height: 150px;min-width: 150px;border-radius: 10px;}
+::-webkit-scrollbar-thumb:vertical:hover{background: #555555}
+::-webkit-scrollbar-thumb:horizontal:hover{background: #555555}
+body a{
+  color:#777;
+}
+/* --- */
+
+/* 布局定义 */
+.page{
+  display:flex;
+}
+.page-left{
+  flex:1 0 600px;
+}
+.page-right{
+  flex:0 0 450px;
+  background-color: #f8f8f8;
+  border-left: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* --- */
+
+
+.page-make{
+  margin:0 auto;
+  background-color: #fff;
+  background-image:url(./phone.jpg);
+  background-size:cover;
+  width: 384px;
+  height: 770px;
+  padding: 74px 17px 0;
+}
+
+/* 设置tab和面板 */
+.navbar-page{
+  margin-bottom: 0;
+}
+.nav-right{
+  margin-top:20px;
+}
+.nav-right li{
+  position:relative;
+  left:10;
+}
+.page-config{
+  padding:10px 10px 10px;
+}
+body .page-config .control-label{
+  padding-top:0;
+}
+
+#pageContent{
+  width:10rem;
+  height: 624px;
+  overflow: auto;
+  background-repeat: repeat;
+  overflow-x: hidden;
+}
+#pageContent > div{
+  width:10rem;
+}
+.page-config .form-group{
+  margin:0 0 15px 0;
+}
+.page-banner{
+  text-align: center;
+  margin:5px 0;
+}
+.banner-container{
+  text-align:center;
+  padding-top:10px;
+  height:595px;
+  overflow: auto;
+  .banner-item{
+    box-shadow:@shadow;
+    position:relative;
+    width:350px;
+    margin:5px auto 20px;
+    .banner-img{
+      width:100%;
+      height:auto;
+      max-height: 400px;
+    }
+    .banner-del{
+      position:absolute;
+      right:-5px;
+      top:-5px;
+      background-color:#000;
+      color:#fff;
+      width:20px;
+      height:20px;
+      line-height: 17px;
+      font-size:15px;
+      text-align:center;
+      border:1px solid #fff;
+      border-radius:50%;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    .banner-del:hover,.banner-del:focus{
+      text-decoration: none;
+      box-shadow:@shadow;
+    }
+  }
+}
+
+/* ---- */
+
+/* 坑位 */
+.page-pits{
+  display: flex;
+  width:535px;
+  max-height: 624px;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+.page-pits-wrap{
+  flex:1 1 200px;
+  position:relative;
+  margin:0 10px 10px 10px;
+  text-align: center;
+}
+.page-pits-wrap > img{
+  display: block;
+  max-width: 230px;
+  height: auto;
+  max-height: 300px;
+  margin:0;
+  box-shadow:@shadow;
+}
+.page-pits-wrap > span{
+  position:absolute;
+  background-color:#fff;
+  color:#000;
+  padding:3px;
+  left:0;
+  top:0;
+}
+/* 页面按钮 */
+.page-buttons{
+  position:fixed;
+  left: 0;
+  bottom:0;
+  button{
+    border-radius:4px 4px 0 0;
+  }
+  button:first-child{
+    border-radius:0 4px 0 0;
+  }
+}
+// left
+.client-hidden{
+  text-decoration:none;
+}
+.panel-del,.panel-edit,.panel-up,.panel-down{
+  position:absolute;
+  top:2px;
+  text-align:center;
+  cursor:pointer;
+  z-index:10;
+  font-size:12px;
+  .iconfont{
+    font-size:12px;
+  }
+}
+.panel-del:hover,.panel-edit:hover,.panel-up:hover,.panel-down:hover{
+  text-decoration:none;
+}
+.panel-del{
+  left:2px;
+}
+.panel-edit{
+  left:28px;
+}
+.panel-up{
+  left:54px;
+}
+.panel-down{
+  left:80px;
+}

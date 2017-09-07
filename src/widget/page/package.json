@@ -1,0 +1,5 @@
+{
+  "name":"page",
+  "main":"page.js",
+  "description":"根据配置生成html,前后端共用"
+}

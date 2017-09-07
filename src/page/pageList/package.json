@@ -1,0 +1,5 @@
+{
+  "name":"pageList",
+  "main":"pageList.js",
+  "description":"页面列表"
+}

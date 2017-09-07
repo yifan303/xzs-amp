@@ -1,0 +1,5 @@
+{
+  "name":"mode",
+  "main":"mode.js",
+  "description":"自定义模块"
+}

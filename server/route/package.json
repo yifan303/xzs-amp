@@ -1,0 +1,5 @@
+{
+  "name":"route",
+  "main":"route.js",
+  "description":"路由配置"
+}

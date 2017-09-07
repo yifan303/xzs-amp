@@ -1,0 +1,5 @@
+{
+  "name":"make",
+  "main":"make.js",
+  "description":"制作页面"
+}
