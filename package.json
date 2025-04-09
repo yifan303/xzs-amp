@@ -32,7 +32,7 @@
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
     "jquery": "^3.1.1",
-    "koa": "1.2.4",
+    "koa": "2.16.1",
     "koa-body": "^1.6.0",
     "koa-bodyparser": "^2.3.0",
     "koa-proxy2": "^0.11.0",
